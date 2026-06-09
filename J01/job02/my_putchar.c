@@ -16,6 +16,7 @@ int my_putstr(char *c)
     }
     return i;
 }
+
 int my_putchar(char c);
 int my_putstr(char *c);
 

@@ -15,6 +15,7 @@ char *my_strcpy(char *dst,char *src)
     dst[i] = '\0';
     return (dst);
 }
+
 int main()
 {
     char src[] = "Hello, World!";
