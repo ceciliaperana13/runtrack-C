@@ -1,19 +1,17 @@
 #include <stdio.h>
-#include "power.h"
+#include "sanitize.h"
 
 int main(void)
 {
-    int n;
-    int p;
+    char s[200];
 
-    printf("Base : ");
-    scanf("%d", &n);
+    printf("Tape une chaîne : ");
+    fgets(s, 200, stdin);   // permet de lire les caractères non imprimables
 
-    printf("Puissance : ");
-    scanf("%d", &p);
+    str_sanitize(s);
 
-    printf("%d ^ %d = %d\n", n, p, power(n, p));
+    printf("Après nettoyage : %s\n", s);
 
     return 0;
 }
-//quand puissance negatif est presente elle est non gerer et donc retournera 0
+//hello world est imprimable 
