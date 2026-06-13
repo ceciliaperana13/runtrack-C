@@ -9,5 +9,7 @@ typedef struct album_item {
 } AlbumItem;
 
 AlbumItem *create_album_item(char *artist, char *title, int year);
+int count_album_item(AlbumItem *list);
+AlbumItem *find_album(AlbumItem *list, const char *title);
 
 #endif
